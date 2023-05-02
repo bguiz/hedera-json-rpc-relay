@@ -247,7 +247,27 @@
                     "title": "hex encoded unsigned integer",
                     "$ref": "#/components/schemas/uint"
                 }
-            }
+            },
+            "examples": [
+                {
+                    "name": "eth_getBalance_example_00",
+                    "description": "eth_getBalance example of EVM account that exists and has a balance",
+                    "params": [
+                        {
+                            "name": "Address",
+                            "value": "0x7394111093687e9710b7a7aeba3ba0f417c54474"
+                        },
+                        {
+                            "name": "Block",
+                            "value": "latest"
+                        }
+                    ],
+                    "result": {
+                        "name": "eth_getBalance_example_00_response",
+                        "value": "0x21e19e0c9bab2400000"
+                    }
+                }
+            ]
         },
         {
             "name": "eth_getBlockByHash",
